@@ -20,6 +20,7 @@
 .header {
   width: clamp(23.438rem, 100vw, 90rem);
   padding-bottom: 100px;
+  margin-top: 100px;
 }
 
 .header h1 {
@@ -29,6 +30,7 @@
   font-family: var(--PressStart2P);
   vertical-align: bottom;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .header h2 {
@@ -55,7 +57,8 @@ h3 {
   font-size: 18px;
   line-height: 100%;
   vertical-align: middle;
-  padding: clamp(0.188rem, -1700vw + 4.438rem, 1.25rem) 10px;
+  padding: clamp(0.188rem, 0vw + 0.188rem, 0.188rem) 10px clamp(0.313rem, -0.188vw + 0.357rem, 0.188rem) 10px;
+  padding-top: 6px;
 }
 
 p {
@@ -67,19 +70,17 @@ p {
 .post {
   width: clamp(23.438rem, 30.141vw + 16.373rem, 43.5rem);
   border: solid 2px black;
-  margin-bottom: 50px;
 }
 
 .paragraph {
   display: flex;
   flex-direction: column;
   gap: 27px;
-  margin: 25px;
 }
 
 img {
   width: 100%;
-  height: clamp(23.438rem, 30.141vw + 16.373rem, 43.5rem);
+  height: clamp(43.813rem, 0vw + 43.813rem, 43.813rem);
   object-fit: cover;
   border-bottom: solid 2px black;
   border-top: solid 2px black;
@@ -90,6 +91,39 @@ main {
   justify-self: center;
   align-content: center;
   flex-direction: column;
+  gap: 50px;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-family: var(--PressStart2P);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 90%;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 0;
+  padding-top: 26px;
+}
+
+button svg {
+  width: 100%;
+}
+
+.button__text {
+  border: 2px solid black;
+  padding: 9px 33px;
+  width: 100%;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin: 25px;
 }
 
 @media (min-width: 375px) {
