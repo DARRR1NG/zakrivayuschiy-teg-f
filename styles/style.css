@@ -126,6 +126,10 @@ button svg {
   margin: 25px;
 }
 
+.save {
+  border: 2px solid black;
+}
+
 @media (min-width: 375px) {
   .header {
     width: 100%;
