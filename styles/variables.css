@@ -3,4 +3,9 @@
     --PressStart2P: "PressStart2P-Regular.woff";
     --Inter-weight-text: 400;
     --Inter-weight-name: 700; 
+    --background-gradient: 
+        repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px), 
+        repeating-linear-gradient(180deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px), 
+        linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+    --border-lable: 1px #fff;
 }
