@@ -1,8 +1,8 @@
 :root {
     --Inter: "Inter-Variable";
-    --PressStart2P: "PressStart2P-Regular.woff";
+    --PressStart2P: "PressStart2P-Regular";
     --Inter-weight-text: 400;
-    --Inter-weight-name: 700; 
+    --Inter-weight-name: 700;
     --background-gradient: 
         repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px), 
         repeating-linear-gradient(180deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px), 
