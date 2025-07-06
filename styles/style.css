@@ -103,6 +103,12 @@ main {
   gap: 50px;
 }
 
+.buttons {
+  display: flex;
+  margin-top: 29px;
+  gap: 14px;
+}
+
 button {
   outline: none;
   border: none;
@@ -117,18 +123,13 @@ button {
   cursor: pointer;
 }
 
-.button-reaction {
-  gap: 14px;
-  padding-top: 26px;
-}
-
 button svg {
   width: 100%;
 }
 
 .button__text {
   border: 2px solid black;
-  padding: 9px 33px;
+  padding: 10px 33px;
   width: 100%;
 }
 
@@ -169,6 +170,8 @@ button svg {
   margin-bottom: 103px;
   justify-content: center;
   padding: 15px 0;
+  background-color: #fff;
+  position: relative;
 }
 
 .button-save .floppy {
@@ -274,4 +277,54 @@ button svg {
 
 .now {
   filter: opacity(0.8) brightness(200%);
+}
+
+/* Состояния кнопок */
+
+.card__like-button:focus {
+  outline: none;
+  box-shadow: 2px 2px black;
+  transition: box-shadow 0.3s ease;
+}
+
+.button-save:focus {
+  outline: none;
+  box-shadow: 2px 2px black;
+  transition: box-shadow 0.3s ease;
+}
+
+.button-agree:focus {
+  outline: none;
+  box-shadow: 2px 2px black;
+  transition: box-shadow 0.3s ease;
+}
+
+.button-click::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.button-click:hover::before {
+  transform: translateX(100%);
+}
+
+.button-click {
+  color: #fff;
+  background-color: #fff;
+  border: #fff;
+  border: #fff 2px solid;
+  position: relative;
+  overflow: hidden;
+  mix-blend-mode: difference;
+}
+
+.button__text {
+  mix-blend-mode: difference;
 }
