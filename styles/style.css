@@ -164,14 +164,18 @@ button svg {
 }
 
 .button-save {
+  display: flex;
   border: 2px solid black;
   gap: 10px;
   width: 337px;
+  padding: 16px 19px;
   margin-bottom: 103px;
-  justify-content: center;
-  padding: 15px 0;
   background-color: #fff;
-  position: relative;
+}
+
+.save {
+  padding: 0;
+  border: none;
 }
 
 .button-save .floppy {
@@ -279,7 +283,8 @@ button svg {
   filter: opacity(0.8) brightness(200%);
 }
 
-/* Состояния кнопок */
+/* Состояния кнопок
+Состояние focus*/
 
 .card__like-button:focus {
   outline: none;
@@ -299,12 +304,14 @@ button svg {
   transition: box-shadow 0.3s ease;
 }
 
+/* Состояние hover*/
+
 .button-click::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #000;
+  background-color: #fff;
   width: 100%;
   height: 100%;
   transition: transform 0.5s ease-in-out;
@@ -316,15 +323,27 @@ button svg {
 }
 
 .button-click {
-  color: #fff;
-  background-color: #fff;
-  border: #fff;
-  border: #fff 2px solid;
+  color: #000;
+  background-color: #000;
+  border: #000;
+  border: #000 2px solid;
   position: relative;
   overflow: hidden;
-  mix-blend-mode: difference;
 }
 
 .button__text {
   mix-blend-mode: difference;
+  color: #fff;
+  z-index: 2;
+}
+
+.button-save .floppy {
+  mix-blend-mode: difference;
+  height: auto;
+  color: white;
+}
+
+.agree {
+  border: none;
+  padding: 0;
 }
