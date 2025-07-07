@@ -9,3 +9,15 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+@keyframes full_animation {
+    to {
+        scale: 1.25;
+    }
+}
+
+@keyframes animation_sparks {
+    to {
+        opacity: 100%;;
+    }
+}

@@ -76,7 +76,7 @@ p {
 
 .post {
   position: relative;
-  width: clamp(23.438rem, 30.141vw + 16.373rem, 43.5rem);
+  width: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
   border: solid 2px black;
   background-color: white;
 }
@@ -89,7 +89,7 @@ p {
 
 img {
   width: 100%;
-  height: clamp(23.188rem, 30.516vw + 16.035rem, 43.5rem);
+  height: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
   object-fit: cover;
   border-bottom: solid 2px black;
   border-top: solid 2px black;
@@ -105,8 +105,8 @@ main {
 
 .buttons {
   display: flex;
-  margin-top: 29px;
-  gap: 14px;
+  margin-top: 25px;
+  gap: 5px;
 }
 
 button {
@@ -123,7 +123,17 @@ button {
   cursor: pointer;
 }
 
+.card__like-button {
+  width: 130px;
+}
+
 button svg {
+  width: 100%;
+}
+
+.card__like-button .button__text {
+  border: 2px solid black;
+  padding: 0;
   width: 100%;
 }
 
@@ -137,7 +147,7 @@ button svg {
   display: flex;
   flex-direction: column;
   align-items: end;
-  margin: 25px;
+  margin: 24px;
 }
 
 .lable {
@@ -240,7 +250,7 @@ button svg {
   }
 
   .button-save {
-    width: 306px;
+    width: 310px;
     flex-direction: column;
   }
 
@@ -346,4 +356,80 @@ button svg {
 .agree {
   border: none;
   padding: 0;
+}
+
+/* Анимация сердца */
+
+.sparks {
+  opacity: 0%;
+}
+
+.contour {
+  transition: fill 0.1s linear;
+}
+
+.core {
+  transition: fill linear 0.3s;
+  transition-delay: 0.03s;
+}
+
+.main-body {
+  transition: fill linear 0.3s ;
+}
+
+.like-icon:hover .core {
+  fill: var(--contour);
+  transition-delay: none;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--contour);
+  transition-delay: 0.05s;
+}
+
+.like-icon:active .core {
+  fill: var(--animation-fill-color);
+  transition-delay: none;
+}
+
+.like-icon:active .main-body {
+  fill: var(--animation-fill-color);
+  transition-delay: 0.05s;
+}
+
+/* Анимация по клику */
+
+.like-icon.is-liked .contour {
+  fill: var(--animation-fill-color);
+  transition: fill linear 0.3s;
+  transition-delay: 0.06s;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--animation-fill-color);
+  transition: fill linear 0.3s;
+  transition-delay: 0.05s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--animation-fill-color);
+  transition: fill linear 0.3s;
+  transition-delay: 0s;
+}
+
+.like-icon.is-liked .sparks {
+  animation-delay: 0.3s;
+  animation-name: animation_sparks;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-duration: 0.3s;
+}
+
+.like-icon.is-liked .heart {
+  animation-delay: 0.1s;
+  animation-name: full_animation;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-duration: 0.3s;
+  transform-origin: center;
 }
