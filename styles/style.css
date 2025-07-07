@@ -141,6 +141,9 @@ button svg {
   border: 2px solid black;
   padding: 10px 33px;
   width: 100%;
+  mix-blend-mode: difference;
+  color: #fff;
+  z-index: 2;
 }
 
 .information {
@@ -190,6 +193,9 @@ button svg {
 
 .button-save .floppy {
   width: 21px;
+  mix-blend-mode: difference;
+  height: auto;
+  color: white;
 }
 
 .dialog-id[open] {
@@ -335,22 +341,9 @@ button svg {
 .button-click {
   color: #000;
   background-color: #000;
-  border: #000;
   border: #000 2px solid;
   position: relative;
   overflow: hidden;
-}
-
-.button__text {
-  mix-blend-mode: difference;
-  color: #fff;
-  z-index: 2;
-}
-
-.button-save .floppy {
-  mix-blend-mode: difference;
-  height: auto;
-  color: white;
 }
 
 .agree {
@@ -374,7 +367,7 @@ button svg {
 }
 
 .main-body {
-  transition: fill linear 0.3s ;
+  transition: fill linear 0.3s;
 }
 
 .like-icon:hover .core {
