@@ -13,7 +13,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--Inter), 'sans-serif';
+  font-family: var(--main-font), 'sans-serif';
   font-variation-settings: 'wght' var(--Inter-weight-text);
   background-image: var(--background-gradient);
   background-size: cover;
@@ -25,7 +25,7 @@
 }
 
 .header {
-  width: clamp(23.438rem, 100vw, 90rem);
+  width: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
   padding-bottom: 100px;
   margin-top: 100px;
 }
@@ -34,7 +34,7 @@
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   line-height: 100%;
   font-weight: 400;
-  font-family: var(--PressStart2P);
+  font-family: var(--accent-font), fantasy;
   vertical-align: bottom;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -44,7 +44,7 @@
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   line-height: 100%;
   font-weight: 400;
-  font-family: var(--PressStart2P);
+  font-family: var(--accent-font), fantasy;
   vertical-align: bottom;
   text-transform: uppercase;
 }
@@ -75,7 +75,6 @@ p {
 }
 
 .post {
-  position: relative;
   width: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
   border: solid 2px black;
   background-color: white;
@@ -112,7 +111,7 @@ main {
 button {
   outline: none;
   border: none;
-  font-family: var(--PressStart2P);
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   font-weight: 400;
   line-height: 90%;
@@ -153,12 +152,16 @@ button svg {
   margin: 24px;
 }
 
+.photo-post {
+  position: relative;
+}
+
 .lable {
   position: absolute;
-  right: 24px;
-  top: 58px;
+  top: 28px;
+  right: 35px;
   color: black;
-  font-family: var(--PressStart2P);
+  font-family: var(--accent-font), fantasy;
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
@@ -214,7 +217,7 @@ button svg {
 }
 
 .dialog-information p {
-  font-family: var(--PressStart2P);
+  font-family: var(--accent-font), fantasy;
   font-weight: 400;
   font-style: Regular;
   font-size: 14px;
@@ -263,61 +266,67 @@ button svg {
   .button-save .floppy {
     width: 28px;
   }
+
+  .lable {
+
+  }
 }
 
 /* Фильтры на фото */
 
-.preparing {
+.filter-sepia {
   filter: sepia(80%);
 }
 
-.clear-sheet {
+.filter-invert {
   filter: invert(0.7);
 }
 
-.no-cool {
+.filter-saturate {
   filter: saturate(200%);
 }
 
-.go-perfect {
+.filter-contrast {
   filter: contrast(120%);
 }
 
-.about-nearby {
+.filter-opacity {
   filter: opacity(0.8);
 }
 
-.strategy {
+.filter-grayscale {
   filter: grayscale(0.8);
 }
 
-.weary {
+.filter-rotate {
   filter: hue-rotate(-90deg);
 }
 
-.now {
+.filter-mix {
   filter: opacity(0.8) brightness(200%);
 }
 
 /* Состояния кнопок
-Состояние focus*/
+Состояние focus-visible*/
 
-.card__like-button:focus {
+.button-animation:focus-visible {
   outline: none;
   box-shadow: 2px 2px black;
   transition: box-shadow 0.3s ease;
 }
 
-.button-save:focus {
+.card__icon-button:focus {
   outline: none;
-  box-shadow: 2px 2px black;
-  transition: box-shadow 0.3s ease;
 }
 
-.button-agree:focus {
+.card__icon-button:focus-visible {
   outline: none;
-  box-shadow: 2px 2px black;
-  transition: box-shadow 0.3s ease;
+  border: 2px #000 solid;
+  transition: border 0.3s ease;
+}
+
+.card__icon-button {
+  border: 2px solid transparent;
 }
 
 /* Состояние hover*/
@@ -362,8 +371,7 @@ button svg {
 }
 
 .core {
-  transition: fill linear 0.3s;
-  transition-delay: 0.03s;
+  transition: fill linear 0.3s 0.03s;
 }
 
 .main-body {
@@ -372,42 +380,39 @@ button svg {
 
 .like-icon:hover .core {
   fill: var(--contour);
-  transition-delay: none;
+  transition: fill 0.3s linear;
 }
 
 .like-icon:hover .main-body {
   fill: var(--contour);
-  transition-delay: 0.05s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon:active .core {
   fill: var(--animation-fill-color);
-  transition-delay: none;
+  transition: fill 0.3s linear 0s;
 }
 
 .like-icon:active .main-body {
   fill: var(--animation-fill-color);
-  transition-delay: 0.05s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 /* Анимация по клику */
 
 .like-icon.is-liked .contour {
   fill: var(--animation-fill-color);
-  transition: fill linear 0.3s;
-  transition-delay: 0.06s;
+  transition: fill linear 0.3s 0.06s;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--animation-fill-color);
-  transition: fill linear 0.3s;
-  transition-delay: 0.05s;
+  transition: fill linear 0.3s 0.05s;
 }
 
 .like-icon.is-liked .core {
   fill: var(--animation-fill-color);
-  transition: fill linear 0.3s;
-  transition-delay: 0s;
+  transition: fill linear 0.3s 0s;
 }
 
 .like-icon.is-liked .sparks {

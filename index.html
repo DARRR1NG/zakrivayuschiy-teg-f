@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
-    <link rel="icon" href="./image/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" type="image/png" />
     <link rel="stylesheet" href="./svg/floppy.svg" />
   </head>
   <body class="page">
@@ -27,7 +28,7 @@
           <img
             src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTI4YzZ6bm5jaHU4dDV3NXBrNGZmMmJ5b3lsOHRidzNsZWU0bGs5ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FZuRP6WaW5qg/giphy.gif"
             alt="Кот, который тяжело дышит"
-            class="preparing"
+            class="filter-sepia"
           />
           <span class="lable">fear</span>
         </div>
@@ -41,7 +42,7 @@
             <p>Было сложно, но возможно.</p>
           </div>
           <div class="buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,12 +57,12 @@
                     d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
                   />
                   <path
-                    class="core"
+                    class="main-body"
                     fill="transparent"
                     d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
                   />
                   <path
-                    class="main-body"
+                    class="core"
                     fill="transparent"
                     d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
                   />
@@ -73,7 +74,10 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button-click">
+            <button
+              type="button"
+              class="card__like-button button-click button-animation"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -85,7 +89,7 @@
           <img
             src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3NhM2tvNHZhNzQ4bThjbDh5NnNhNnE1MHFuZGVxc2EyYnY4dzlmNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8vQSQ3cNXuDGo/giphy.gif"
             alt="Кот бегает по квартире с тапком на мордочке"
-            class="clear-sheet"
+            class="filter-invert"
           />
           <span class="lable">nervous</span>
         </div>
@@ -103,7 +107,7 @@
             </p>
           </div>
           <div class="buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -118,12 +122,12 @@
                     d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
                   />
                   <path
-                    class="core"
+                    class="main-body"
                     fill="transparent"
                     d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
                   />
                   <path
-                    class="main-body"
+                    class="core"
                     fill="transparent"
                     d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
                   />
@@ -135,7 +139,10 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button-click">
+            <button
+              type="button"
+              class="card__like-button button-click button-animation"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -147,7 +154,7 @@
           <img
             src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZW1sNG9wcTI1c3R4emE5czJ1Z3FzMzJ6M2RxaXh3Y2RlaTMyOWJ4MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hS6KvugVZSAH6/giphy.gif"
             alt="Кот напуганно выглядывает из под дивана"
-            class="no-cool"
+            class="filter-saturate"
           />
           <span class="lable">happy</span>
         </div>
@@ -163,7 +170,7 @@
             </p>
           </div>
           <div class="buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -178,12 +185,12 @@
                     d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
                   />
                   <path
-                    class="core"
+                    class="main-body"
                     fill="transparent"
                     d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
                   />
                   <path
-                    class="main-body"
+                    class="core"
                     fill="transparent"
                     d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
                   />
@@ -195,7 +202,10 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button-click">
+            <button
+              type="button"
+              class="card__like-button button-click button-animation"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -207,7 +217,7 @@
           <img
             src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTQ0ZGJwaWplZXg0dG9zNGFjaTZhOTV2ZDZzOGV0ZTAzZjh5aDY4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JIX9t2j0ZTN9S/giphy.gif"
             alt="Кот печатает на клавиатуре"
-            class="go-perfect"
+            class="filter-contrast"
           />
           <span class="lable">concentration</span>
         </div>
@@ -226,7 +236,7 @@
             </p>
           </div>
           <div class="buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -241,12 +251,12 @@
                     d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
                   />
                   <path
-                    class="core"
+                    class="main-body"
                     fill="transparent"
                     d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
                   />
                   <path
-                    class="main-body"
+                    class="core"
                     fill="transparent"
                     d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
                   />
@@ -258,7 +268,10 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button-click">
+            <button
+              type="button"
+              class="card__like-button button-click button-animation"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -270,7 +283,7 @@
           <img
             src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzZybGs0dHMyM2xpdDhzdmtkeTd5ZHUzdHpieXpxdGk5bWw5anI5diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Eq5pb4dR4DJQc/giphy.gif"
             alt="Коты с банками от лапши на голове"
-            class="about-nearby"
+            class="filter-opacity"
           />
           <span class="lable">relax</span>
         </div>
@@ -290,7 +303,7 @@
             </p>
           </div>
           <div class="buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -305,12 +318,12 @@
                     d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
                   />
                   <path
-                    class="core"
+                    class="main-body"
                     fill="transparent"
                     d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
                   />
                   <path
-                    class="main-body"
+                    class="core"
                     fill="transparent"
                     d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
                   />
@@ -322,7 +335,10 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button-click">
+            <button
+              type="button"
+              class="card__like-button button-click button-animation"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -334,7 +350,7 @@
           <img
             src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTJ5NXoybmtycnp1cHl3bjYyZzdnNmVtcWZoOGF6dXgzNm9kOWVrOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VbnUQpnihPSIgIXuZv/giphy.gif"
             alt="Кот смотрит в компьютер"
-            class="strategy"
+            class="filter-grayscale"
           />
           <span class="lable">tire</span>
         </div>
@@ -348,7 +364,7 @@
             <p>Тогда я шла спать и смотреть утром под другим углом.</p>
           </div>
           <div class="buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -363,12 +379,12 @@
                     d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
                   />
                   <path
-                    class="core"
+                    class="main-body"
                     fill="transparent"
                     d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
                   />
                   <path
-                    class="main-body"
+                    class="core"
                     fill="transparent"
                     d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
                   />
@@ -380,7 +396,10 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button-click">
+            <button
+              type="button"
+              class="card__like-button button-click button-animation"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -392,7 +411,7 @@
           <img
             src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmx4aTA5aXQxenI5bnk2bTlkaGhpd2l2d202N3BwcGdvdHQwNTBtMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iwoathoVXUWfC/giphy.gif"
             alt="Два кота лежат"
-            class="weary"
+            class="filter-rotate"
           />
           <span class="lable">calmness</span>
         </div>
@@ -408,7 +427,7 @@
             <p>В моем родном человеке.</p>
           </div>
           <div class="buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -423,12 +442,12 @@
                     d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
                   />
                   <path
-                    class="core"
+                    class="main-body"
                     fill="transparent"
                     d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
                   />
                   <path
-                    class="main-body"
+                    class="core"
                     fill="transparent"
                     d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
                   />
@@ -440,7 +459,10 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button-click">
+            <button
+              type="button"
+              class="card__like-button button-click button-animation"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -452,7 +474,7 @@
           <img
             src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWtoNXZrcnlqM2JkNnkwMGJ2aXMzbzVpaG8yamNwamFsMHdib3E4cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yFQ0ywscgobJK/giphy.gif"
             alt="Кот закрывает лапами мордочку"
-            class="now"
+            class="filter-mix"
           />
           <span class="lable">joy</span>
         </div>
@@ -469,7 +491,7 @@
             <p>Буду стараться становиться лучше с каждым днем.</p>
           </div>
           <div class="buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -484,12 +506,12 @@
                     d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
                   />
                   <path
-                    class="core"
+                    class="main-body"
                     fill="transparent"
                     d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
                   />
                   <path
-                    class="main-body"
+                    class="core"
                     fill="transparent"
                     d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
                   />
@@ -501,14 +523,17 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button-click">
+            <button
+              type="button"
+              class="card__like-button button-click button-animation"
+            >
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
       </article>
       <button
-        class="button-save button-click"
+        class="button-save button-click button-animation"
         type="button"
         onclick="window['dialog-id'].showModal()"
         aria-controls="dialog-id"
@@ -535,7 +560,7 @@
             <p>Вставьте дискету, чтобы продолжить</p>
           </div>
           <button
-            class="button-agree button-click"
+            class="button-agree button-click button-animation"
             type="button"
             onclick="window['dialog-id'].close()"
             aria-controls="dialog-id"
