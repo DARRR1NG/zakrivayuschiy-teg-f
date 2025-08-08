@@ -17,3 +17,6 @@
 
 # Задача
 Разработать адаптивную страницу с анимацией.
+
+## Макет
+https://www.figma.com/design/hyrNPhHoNSyu9sbakJh7di/4-спринт.-Проектная--работа?node-id=0-1&p=f&t=1Iqm2ljGVCEurBSx-0
